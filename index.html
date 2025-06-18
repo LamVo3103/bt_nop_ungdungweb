@@ -1,54 +1,108 @@
 <!DOCTYPE html>
 <html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile_Ca_Nhan</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="particles" id="particles-js"></div>
     <div class="container">
-        <div class="left-section">
-            <img src="img/avatar.png" alt="Ảnh cá nhân" class="profile-image">
+      <div class="left-section">
+        <div class="image-container">
+          <img
+            src="img/tải xuống.png"
+            alt="Ảnh cá nhân"
+            class="profile-image"
+          />
+          <div class="image-overlay">
+            <span>Võ Thành Lâm</span>
+          </div>
         </div>
-        <div class="right-section">
-            <h1>Profile của Lâm</h1>
-            
-            <div class="info-item">
-                <span class="info-label">Họ và tên:</span>
-                <span class="info-content">Võ Thành Lâm</span>
-            </div>
-            
-            <div class="info-item">
-                <span class="info-label">Ngày sinh:</span>
-                <span class="info-content">31/03/2005</span>
-            </div>
-            
-            <div class="info-item">
-                <span class="info-label">Ngành</span>
-                <span class="info-content">Khoa học máy tính</span>
-            </div>
+      </div>
+      <div class="right-section">
+        <h1 data-text="Profile của Lâm">Profile của Lâm</h1>
 
-            <div class="info-item">
-                <span class="info-label">Khoa</span>
-                <span class="info-content">Đào tạo đặc biệt</span>
+        <div class="info-grid">
+          <div class="info-item" data-aos="fade-up">
+            <div class="info-icon"><i class="fas fa-user"></i></div>
+            <div class="info-content">
+              <span class="info-label">Họ và tên:</span>
+              <span>Võ Thành Lâm</span>
             </div>
-            
-            <div class="info-item">
-                <span class="info-label">Email:</span>
-                <span class="info-content">2351050090lam@ou.edu.vn</span>
+          </div>
+
+          <div class="info-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="info-icon"><i class="fas fa-birthday-cake"></i></div>
+            <div class="info-content">
+              <span class="info-label">Ngày sinh:</span>
+              <span>31/03/2005</span>
             </div>
-            
-            <div class="info-item">
-                <span class="info-label">Địa chỉ:</span>
-                <span class="info-content">Bình định, Việt Nam</span>
+          </div>
+
+          <div class="info-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="info-icon"><i class="fas fa-graduation-cap"></i></div>
+            <div class="info-content">
+              <span class="info-label">Ngành:</span>
+              <span>Khoa học máy tính</span>
             </div>
-            
-            <div class="social-links">
-                <a href="https://www.facebook.com/lam.vothanh.7547" target="_blank">Facebook</a>
-                <a href="https://github.com/LamVo3103" target="_blank">GitHub</a>
+          </div>
+
+          <div class="info-item" data-aos="fade-up" data-aos-delay="300">
+            <div class="info-icon"><i class="fas fa-university"></i></div>
+            <div class="info-content">
+              <span class="info-label">Khoa:</span>
+              <span>Đào tạo đặc biệt</span>
             </div>
+          </div>
+
+          <div class="info-item" data-aos="fade-up" data-aos-delay="400">
+            <div class="info-icon"><i class="fas fa-envelope"></i></div>
+            <div class="info-content">
+              <span class="info-label">Email:</span>
+              <span>2351050090lam@ou.edu.vn</span>
+            </div>
+          </div>
+
+          <div class="info-item" data-aos="fade-up" data-aos-delay="500">
+            <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="info-content">
+              <span class="info-label">Địa chỉ:</span>
+              <span>Bình Định, Việt Nam</span>
+            </div>
+          </div>
         </div>
+
+        <div class="social-links">
+          <a
+            href="https://www.facebook.com/lam.vothanh.7547"
+            target="_blank"
+            class="social-btn facebook"
+            data-aos="zoom-in"
+            data-aos-delay="600"
+          >
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a
+            href="https://github.com/LamVo3103"
+            target="_blank"
+            class="social-btn github"
+            data-aos="zoom-in"
+            data-aos-delay="700"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
     </div>
-</body>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
